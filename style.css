@@ -1,0 +1,88 @@
+body{
+    background-color:cadetblue;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#main-header{
+    background-color: darkolivegreen;
+    width: 100%;
+}
+
+.logo{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 6px 16px;
+}
+#navbar{
+    margin-top: 10px;
+    float: right;
+}
+#navbar ul{
+    padding: 0;
+    list-style: none;   
+}
+
+#navbar li{
+    display: inline;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+#navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+#navbar a:hover{
+    background-color: aquamarine;
+    color: black;
+}
+#hero{
+    background-image: url(../realistic-mountains-landscape-morning-wood-260nw-1525925255.jpg);
+    background-position: center left;
+    min-height: 400px;
+    margin: 80px 0;
+    text-align: center;
+}
+#hero h1{
+    color: black;
+    font-size: 40px;
+    line-height: 1.6em;
+    padding-top: 50px;
+}
+#sidebar{
+    float: left;
+    width: 25%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    color: black;
+}
+.raw{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+.block{
+    float: right;
+    width: 20%;
+    border: 1px black solid;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 1.5%;
+    background-color: aliceblue;
+    text-align: center;
+    height: 300px;
+}
