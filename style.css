@@ -16,6 +16,8 @@ body{
 #main-header{
     background-color: darkolivegreen;
     width: 100%;
+    height: 75px;
+    position: fixed;
 }
 
 .logo{
@@ -48,12 +50,14 @@ body{
 #navbar a:hover{
     background-color: aquamarine;
     color: black;
+    
 }
 #hero{
-    background-image: url(../projectnew/realistic-mountains-landscape-morning-wood-260nw-1525925255.jpg);
-    background-position: center ;
+    background-image: url(https://media.istockphoto.com/vectors/realistic-mountains-landscape-morning-wood-panorama-pine-trees-and-vector-id1150481340?k=20&m=1150481340&s=612x612&w=0&h=y_RdS4lPY2p7O_bh1ZhaeLLOOuSLNBaHZFMdmgdQaVE=);
+    background-position: center;
     min-height: 400px;
-    margin: 80px 0;
+    margin-top: 0;
+    margin-bottom: 50px;
     text-align: center;
 }
 #hero h1{
@@ -69,11 +73,13 @@ body{
     box-sizing: border-box;
     background-color: aliceblue;
     color: black;
+    text-align: center;
 }
 .raw{
     width: 100%;
     margin: auto;
     padding: 0;
+    height: 500px;
 }
 .block{
     float: right;
@@ -84,5 +90,64 @@ body{
     margin: 10px 1.5%;
     background-color: aliceblue;
     text-align: center;
-    height: 300px;
+    height: 400px;
+}
+#sidebar-a{
+    float:left;
+    margin-top: 150px;
+    margin-left: 20px;
+    
+}
+.box-a{
+    float: right;
+    padding: 50px;
+    margin: 80px;
+    height: 650px;
+}
+.block-a{
+    float: left;
+    width: 40%;
+    height: 600px;
+    background-color: aliceblue;
+    margin-top: 150px;
+}
+.block-a h2{
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+.block-a p{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.block-b{
+    float: right;
+    width: 50%;
+    height: 800px;
+    background-color: aliceblue;
+    margin-top: 150px;
+}
+.block-b h2{
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+.frm{
+    text-align: center;
+    margin-top: 100px;
+}
+.edit{
+   height:800px;
+   text-align: center;
+   margin-top: 100px;
+}
+.frm input[type="text"], .frm input[type="email"], .frm textarea{
+  padding: 8px;  
+  width: 60;
+}
+#ftr{
+    float: left;
+    margin-left: 30px;
+    
 }
