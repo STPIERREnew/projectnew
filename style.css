@@ -85,9 +85,7 @@ body{
 
 }
 .block-a{
-    float: left;
-    width: 40%;
-    height: 600px;
+    height: 400px;
     background-color: aliceblue;
     margin-top: 150px;
 }
@@ -102,9 +100,7 @@ body{
     
 }
 .block-b{
-    float: right;
-    width: 50%;
-    height: 800px;
+    height: 400px;
     background-color: aliceblue;
     margin-top: 50px;
 }
@@ -117,6 +113,9 @@ body{
     text-align: center;
     margin-top: 100px;
 }
+.form-group textarea{
+    margin-right: 30px;
+}
 .edit{
    height:800px;
    text-align: center;
@@ -127,7 +126,7 @@ body{
   width: 60;
 }
 #ftr{
-    float: left;
+    text-align: center;
     margin-left: 30px;
     
 }
