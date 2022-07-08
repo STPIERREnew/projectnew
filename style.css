@@ -116,10 +116,12 @@ body{
 .form-group textarea{
     margin-right: 30px;
 }
-.edit{
-   height:800px;
+#edit{
+   height:600px;
    text-align: center;
-   margin-top: 100px;
+   padding-top: 300px;
+   color: black;
+   font-size: large;
 }
 .frm input[type="text"], .frm input[type="email"], .frm textarea{
   padding: 8px;  
