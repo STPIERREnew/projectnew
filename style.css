@@ -51,48 +51,24 @@ body{
     color: rgb(27, 139, 167);    
 }
 #hero{
-    min-height: 850px;
+    min-height: 860px;
     margin-top: 0;
     margin-bottom: 50px;
     text-align: center;
 }
-#hero h1,p{
-    text-align: center;
-}
-#heroImage{
+#sidebar1{
+    float: left;
+    padding-top: 100px;
+} 
+#sidebar2{
     float: right;
-}
+    padding-top: 100px;
+}    
 #hero h1{
     color: black;
     font-size: 40px;
     line-height: 1.6em;
-    padding-top: 50px;
-}
-#sidebar{
-    float: left;
-    width: 25%;
-    padding: 0 30px;
-    box-sizing: border-box;
-    background-color: aliceblue;
-    color: black;
-    text-align: center;
-}
-.raw{
-    width: 100%;
-    margin: auto;
-    padding: 0;
-    height: 500px;
-}
-.block{
-    float: right;
-    width: 20%;
-    border: 1px black solid;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 10px 1.5%;
-    background-color: aliceblue;
-    text-align: center;
-    height: 400px;
+    padding-top: 150px;
 }
 #sidebar-a{
     float:left;
@@ -100,11 +76,13 @@ body{
     margin-left: 20px;
     
 }
-.box-a{
+#box-a{
     float: right;
-    padding: 50px;
-    margin: 80px;
-    height: 650px;
+    padding-top: 250px;
+    margin: 20px;
+    min-height: 610px;
+
+
 }
 .block-a{
     float: left;
@@ -128,7 +106,7 @@ body{
     width: 50%;
     height: 800px;
     background-color: aliceblue;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 .block-b h2{
     text-align: center;
