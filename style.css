@@ -50,6 +50,9 @@ body{
 #navbar a:hover{
     color: rgb(27, 139, 167);    
 }
+#navbar .point{
+    color: rgb(27, 139, 167);
+}
 #hero{
     min-height: 860px;
     margin-top: 0;
