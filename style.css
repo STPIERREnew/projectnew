@@ -135,3 +135,50 @@ body{
     margin-left: 30px;
     
 }
+
+@media(max-width:500px){
+
+    #hero{
+        margin: 0 0 0px 0;
+    }
+
+    #main-header{
+        position: static;
+    }
+
+    .logo{
+        float: none;
+        margin-right: 5%;
+        height: 40px;
+    }
+
+    #navbar{
+        float: none;
+    }
+
+    #navbar a{
+        display: block;
+        text-align: center;
+        padding-right: 6%;
+    }
+    #navbar li{
+        padding: 10px 5px;
+    }
+
+    #navbar a{
+        font-size: 16px;
+        padding: 1px 5px;
+    }
+    #sidebar-a{
+        padding-top: 150px;
+    }
+    #box-a{
+        padding-top: 30px;
+    }
+    .raw{
+        padding-top: 150px;
+    }
+    #edit{
+        padding-top: 450px;
+    }
+}
