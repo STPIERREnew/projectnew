@@ -67,7 +67,7 @@ body{
     display: none;
 }
 #hero{
-    min-height: 900px;
+    height: 900px;
     color: #FFFFFF;
 }
 #sidebar1{
@@ -146,82 +146,10 @@ body{
 }
 #ftr{
     text-align: center;
-    margin-left: 30px;
-    
+    margin-left: 30px;  
+     
 }
 
-/*@media(max-width:500px){
-
-    #hero{
-        margin: 0 0 0px 0;
-    }
-
-    #main-header{
-        position: static;
-    }
-
-    .logo{
-        float: none;
-        margin-right: 5%;
-        height: 40px;
-    }
-
-    #navbar{
-        float: none;
-    }
-
-    #navbar a{
-        display: block;
-        text-align: center;
-        padding-right: 6%;
-    }
-    #navbar li{
-        padding: 10px 5px;
-    }
-
-    #navbar a{
-        font-size: 16px;
-        padding: 1px 5px;
-    }
-    #sidebar-a{
-        padding-top: 150px;
-    }
-    #box-a{
-        padding-top: 30px;
-    }
-    .raw{
-        padding-top: 150px;
-    }
-    #edit{
-        padding-top: 450px;
-    }
-}
-@media (max-width:858px){
-    .checkbtn{
-        display: block;
-    }
-    #navbar ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left:-100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    #navbar nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    #navbar nav ul li a{
-        font-size: 20px;
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
-}*/
 @media(max-width:800px){
     label #s1{
         display: block;
