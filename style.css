@@ -53,30 +53,42 @@ body{
 #navbar .point{
     color: rgb(27, 139, 167);
 }
+#s1{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+#check{
+    display: none;
+}
 #hero{
-    min-height: 860px;
-    margin-top: 0;
-    margin-bottom: 50px;
-    text-align: center;
+    min-height: 900px;
+    color: #FFFFFF;
 }
 #sidebar1{
     float: left;
-    padding-top: 100px;
+    padding-top: 130px;
+
 } 
 #sidebar2{
     float: right;
     padding-top: 100px;
 }    
 #hero h1{
-    color: black;
+    color: rgb(252, 248, 248);
     font-size: 40px;
     line-height: 1.6em;
-    padding-top: 150px;
+   
 }
 #sidebar-a{
     float:left;
     margin-top: 150px;
-    margin-left: 20px;
+    margin-left: px;
     
 }
 #box-a{
@@ -88,9 +100,10 @@ body{
 
 }
 .block-a{
-    height: 400px;
+    height: 300px;
     background-color: aliceblue;
     margin-top: 150px;
+    padding-top: 10px;
 }
 .block-a h2{
     text-align: center;
@@ -105,7 +118,8 @@ body{
 .block-b{
     height: 400px;
     background-color: aliceblue;
-    margin-top: 50px;
+    margin-top: 30px;
+    padding-top: 10px;
 }
 .block-b h2{
     text-align: center;
@@ -114,7 +128,7 @@ body{
 }
 .frm{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .form-group textarea{
     margin-right: 30px;
@@ -136,7 +150,7 @@ body{
     
 }
 
-@media(max-width:500px){
+/*@media(max-width:500px){
 
     #hero{
         margin: 0 0 0px 0;
@@ -181,4 +195,78 @@ body{
     #edit{
         padding-top: 450px;
     }
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    #navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    #navbar nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #navbar nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}*/
+@media(max-width:800px){
+    label #s1{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(245, 246, 248);
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        transition: 0.5s;
+        z-index: 10;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a{
+        font-size: 16px;
+        display: block;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #check:checked ~ label #s1{
+        display: none;
+    }
+    #box-a{
+        padding-top: 30px;
+        min-height: 250px;
+    }
+
+  
+}   
+section{
+    background: url(https://i.ibb.co/whpBJhj/Getty-Images-1251629816-1-scaled-1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh -80px);
 }
