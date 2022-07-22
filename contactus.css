@@ -66,112 +66,6 @@ body{
 #check{
     display: none;
 }
-/*#main{
-   min-height:720px;
-   text-align: center;
-   padding-top: 300px;
-   color:#FFFFFF;
-   font-size: large;
-   
-}*/
-#hero{
-    height: 900px;
-    color: #FFFFFF;
-}
-
-#sidebar1{
-    float: left;
-    padding-top: 130px;
-
-} 
-#sidebar2{
-    float: right;
-    padding-top: 100px;
-}    
-#hero h1{
-    color: rgb(252, 248, 248);
-    font-size: 40px;
-    line-height: 1.6em;
-   
-}
-#sidebar-a{
-    float:left;
-    margin-top: 150px;
-    margin-left: px;
-    
-}
-#box-a{
-    float: right;
-    padding-top: 250px;
-    margin: 20px;
-    min-height: 610px;
-    margin-right: 0px;
-
-}
-#box-a h1{
-    font-size: 29px;
-}
-#box-a p{
-    font-size: 19px;
-
-}
-.block-a{
-    height: 300px;
-    background-color: aliceblue;
-    margin-top: 150px;
-    padding-top: 10px;
-}
-.block-a h2{
-    text-align: center;
-    margin-top: 50px;
-
-}
-.block-a p{
-    text-align: center;
-    margin-top: 50px;
-    
-}
-.block-b{
-    height: 400px;
-    background-color: aliceblue;
-    margin-top: 30px;
-    padding-top: 10px;
-}
-.block-b h2{
-    text-align: center;
-    margin-top: 30px;
-
-}
-.block-b label{
-    display: block;
-    
-}
-.frm{
-    text-align: center;
-    margin-top: 50px;
-}
-.form-group textarea{
-    margin-right: 0px;
-}
-#edit{
-   height:600px;
-   text-align: center;
-   padding-top: 300px;
-   color: black;
-   font-size: large;
-}
-.frm input[type="text"], .frm input[type="email"], .frm textarea{
-  padding: 8px;  
-  width: 60;
-}
-.img{
-    height: 350px;
-    width: 550px;
-    align-items: center;
-}
-.img-a{
-    min-height: 550px;
-}
 #ftr{
     text-align: center;
     margin-left: 30px; 
@@ -225,7 +119,7 @@ section{
     flex-direction: column;
 }
 .container1 .contactInfo .box {
-    position: relative;
+    /*position: relative;*/
     padding: 20px 0;
     display: flex;
 }
@@ -282,7 +176,7 @@ section{
 }
 
 .contactForm .inputBox span{
-    position: absolute;
+    position:initial;
     left: 0;
     padding: 5px 0;
     font-size: 16px;
