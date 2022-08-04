@@ -270,6 +270,9 @@ section{
     .container1 .contactInfo, .contactForm{
         width: 100%;
     }
+    .content h2{
+        padding-top: 30px;
+    }
 
 }  
 .container2{
