@@ -9,7 +9,7 @@ const nodemailer = require('nodemailer')
 //const mongoData = process.env.DATABASE_URL;
 mongoose.connect("mongodb+srv://dulanjan:dulanjan@cluster0.vhrlmqg.mongodb.net/contactForm")
 const database = mongoose.connection;
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 const app = express();
 
