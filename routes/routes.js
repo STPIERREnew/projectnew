@@ -2,6 +2,7 @@ const express = require('express');
 const form = require('../models/ContactFormResponse.js')
 const router = express.Router();
 const path = require('path');
+const bodyParser = require('body-parser')
 
 router.post('/Contact', async (req, res) => {
     const data = new form({
@@ -13,7 +14,7 @@ router.post('/Contact', async (req, res) => {
     try {
         const dataToSave = await data.save();
         res.status(200).json(dataToSave)
-        return res.redirect( '/signup_success.html');
+       // return res.redirect( '/Contact');
         
     }
     catch (error) {
@@ -21,7 +22,7 @@ router.post('/Contact', async (req, res) => {
     }
 
     //newform.save();
-    
+       
 })
 //router.get("/contact", (req, res) => {
     //res.send("getting all")

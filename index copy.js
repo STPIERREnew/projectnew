@@ -4,7 +4,8 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const path = require('path');
-const nodemailer = require('nodemailer')
+const nodemailer =require('nodemailer')
+
 
 //const mongoData = process.env.DATABASE_URL;
 mongoose.connect("mongodb+srv://dulanjan:dulanjan@cluster0.vhrlmqg.mongodb.net/contactForm")
@@ -21,7 +22,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 app.get('/Contact', function(req, res) {
-    res.sendFile(__dirname + '/views/contactus.html')
+    res.sendFile(path.join(__dirname + '/views/contactus.html'))
 })
 
 app.get('/', function(req, res) {
@@ -39,7 +40,7 @@ app.get('/Services', function(req, res) {
 })
 app.post('/', (req, res)=> {
     cosole.log(req.body);
-
+    
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -50,7 +51,7 @@ app.post('/', (req, res)=> {
     
     const mailOptions = {
         from: req.body.email,
-        to: 'itservicenew100@gmail.com',
+        to: '',
         subject:`message from ${req.body.email}: ${req.body.name}`,
         text: req.body.message
     }
@@ -67,11 +68,6 @@ app.post('/', (req, res)=> {
     
 })
 
-const routes = require('./routes/routes')
-
-app.use('/api', routes)
-
-
 
 database.on('error', (error) => {
    console.log(error)
@@ -83,6 +79,9 @@ database.once('connected', () => {
 
 app.use(express.json())
 
+const routes = require('./routes/routes')
+
+app.use('/', routes)
 
 
 

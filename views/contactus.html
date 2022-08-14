@@ -60,27 +60,25 @@
                         </div>
                     </div>
                     <div class="contactForm">
-                        <form action="contact" method="post">
+                        <form class="contactus"  onsubmit="submitContactForm(event)">
                             <h2>Send Message</h2>
                             <div class="inputBox">
-                                <input type="text" name="name" required="required">
+                                <input type="text" id="name" name="name" required="required">
                                 <span>Full Name</span>
                             </div>
                             <div class="inputBox">
-                                <input type="text" name="email" required="required">
+                                <input type="text" id="email" name="email" required="required">
                                 <span>Email</span>
                             </div>
                             <div class="inputBox">
-                                <textarea required="required" name="message"></textarea>
+                                <textarea required="required" id="message" name="message"></textarea>
                                 <span>Type Your Message</span>
                             </div>
                             <div class="inputBox">
                                 <input type="submit" name="" value="Submit" required="required">
                             </div>
                         </form>
-                        <script>
-                           
-                        </script>
+                        
                     </div>
                 </div>
             </section>
@@ -90,5 +88,15 @@
         <footer id="ftr">
             <p>Copyright &copy; 2022</p>
         </footer>
+        <script>
+            function submitContactForm(event){
+               event.preventDefault()
+               console.log(event)
+                 var name = document.getElementById("name").value
+                 console.log(name)
+                // var Email =
+                // var message =
+            }
+        </script>
     </body>
 </html>
