@@ -3,8 +3,10 @@ const form = require('../models/ContactFormResponse.js')
 const router = express.Router();
 const path = require('path');
 const bodyParser = require('body-parser')
+router.use(bodyParser.urlencoded({extended: true}));
 
 router.post('/Contact', async (req, res) => {
+    console.log(req.body)
     const data = new form({
         name: req.body.name,
         email: req.body.email,

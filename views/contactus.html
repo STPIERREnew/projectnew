@@ -63,16 +63,16 @@
                         <form class="contactus"  onsubmit="submitContactForm(event)">
                             <h2>Send Message</h2>
                             <div class="inputBox">
-                                <input type="text" id="name" name="name" required="required">
-                                <span>Full Name</span>
+                                <input type="text" id="name" name="name" required="required" placeholder="Full Name">
+                                <!--<span>Full Name</span>-->
                             </div>
                             <div class="inputBox">
-                                <input type="text" id="email" name="email" required="required">
-                                <span>Email</span>
+                                <input type="text" id="email" name="email" required="required" placeholder="Email">
+                                <!--<span>Email</span>-->
                             </div>
                             <div class="inputBox">
-                                <textarea required="required" id="message" name="message"></textarea>
-                                <span>Type Your Message</span>
+                                <textarea required="required" id="message" name="message" placeholder="Message"></textarea>
+                                <!--<span>Type Your Message</span>-->
                             </div>
                             <div class="inputBox">
                                 <input type="submit" name="" value="Submit" required="required">
@@ -94,9 +94,19 @@
                console.log(event)
                  var name = document.getElementById("name").value
                  console.log(name)
-                // var Email =
-                // var message =
+                 var email = document.getElementById("email").value
+                 var message = document.getElementById("message").value
+                 console.log(name, email, message)
+                 const requestOptions = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name:name, email:email, message:message})
+};
+fetch('http://localhost:8080/api/Contact', requestOptions)
+    .then(response => response.json())
+    .then(data => console.log(data) );
             }
+        
         </script>
     </body>
 </html>
